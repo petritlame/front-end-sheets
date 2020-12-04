@@ -1,8 +1,32 @@
-body{
-    background-color: gray;
+@font-face {
+    font-family: 'OswaldFont';
+    src: url("../fonts/RobotoCondensed-Regular.ttf") format("truetype");
 }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-family: sans-serif;
+}
+
+body{
+    /*background-color: gray;*/
+}
+/*Navbar*/
 .navbar {
-    padding: 1.6rem 10rem;
+    padding: 1.6rem 8rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: transparent !important;
+    z-index: 100;
+    transition: background-color 200ms linear;
+}
+.navbar-scrolled{
+    background-color: #ffffff !important;
+    transition: background-color 200ms linear;
 }
 .navbar-custom  {
     float:none;
@@ -10,11 +34,24 @@ body{
     display: block;
     text-align: center;
 }
-
 .navbar-custom  > li {
     display: inline-block;
     float:none;
     margin: 0 25px;
+    color: #ffffff;
+}
+
+.custom-link {
+    color: #ffffff !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+.custom-link-scrolled {
+    color: #333333 !important;
+}
+.login-scrolled {
+    color: #333333 !important;
+    border-color: #333333 !important;
 }
 
 .navbar-custom-left{
@@ -29,7 +66,6 @@ body{
     display: block;
     text-align: right;
 }
-
 .login-buttons {
     display: -webkit-flex;
     display: flex;
@@ -51,7 +87,6 @@ body{
     margin-right: 10px;
     text-decoration: none;
 }
-
 .btn.btn-turqoise {
     z-index: 10;
     display: flex;
@@ -70,9 +105,19 @@ body{
 .mobile-logo{ display: none}
 .logo{ display: block}
 #mobile-login{ display: none }
+.navbar-light .navbar-toggler {
+	border-color: rgba(0, 0, 0, 0);
+}
+
+/*Sections*/
+.section-banner{
+    background-color: #3d94ff;
+    height: 1800px;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 600px) and (max-width: 1000px){
-
+    /*Navbar*/
     .mobile-logo{display: block}
     .logo{display: none}
     .navbar {
@@ -98,6 +143,7 @@ body{
 }
 /*!* Medium devices (tablets, 768px and up)*!*/
 @media only screen and (max-width: 1000px) and (min-width: 600px){
+    /*Navbar*/
     .mobile-logo{display: block}
     .logo{display: none}
     .navbar {
