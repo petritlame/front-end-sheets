@@ -1,0 +1,133 @@
+body{
+    background-color: gray;
+}
+.navbar {
+    padding: 1.6rem 10rem;
+}
+.navbar-custom  {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-custom  > li {
+    display: inline-block;
+    float:none;
+    margin: 0 25px;
+}
+
+.navbar-custom-left{
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: left;
+}
+.navbar-custom-right{
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: right;
+}
+
+.login-buttons {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: -70px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navigation-link.nav-link--white-text.navigation-link--ghost {
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsla(0,0%,98%,.25);
+    border-radius: 8px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    padding: 8px 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.btn.btn-turqoise {
+    z-index: 10;
+    display: flex;
+    min-width: 100px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    border-radius: 8px;
+    background-color: #00e3df;
+    padding: 8px 24px;
+}
+.mobile-logo{ display: none}
+.logo{ display: block}
+#mobile-login{ display: none }
+/*Small devices (landscape phones, 576px and up)*/
+@media only screen and (max-width: 600px) and (max-width: 1000px){
+
+    .mobile-logo{display: block}
+    .logo{display: none}
+    .navbar {
+        padding: 1.5rem 2rem;
+    }
+    .navbar-custom  > li {
+        display: block;
+        text-align: left;
+        margin: 8px 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #cfd0d6;
+    }
+    .login-buttons {
+        display: contents;
+        margin-top: 20px;
+    }
+    #login-button{
+        display: none;
+    }
+    #mobile-login{ display: block }
+    .w-button{margin-top: 20px;}
+}
+/*!* Medium devices (tablets, 768px and up)*!*/
+@media only screen and (max-width: 1000px) and (min-width: 600px){
+    .mobile-logo{display: block}
+    .logo{display: none}
+    .navbar {
+        padding: 1.3rem 2rem;
+    }
+    .navbar-custom  > li {
+        display: block;
+        text-align: left;
+        margin: 8px 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #cfd0d6;
+    }
+    .login-buttons {
+        display: contents;
+    }
+    #login-button{
+        display: none;
+    }
+    #mobile-login{ display: block }
+    .w-button{margin-top: 20px;}
+
+}
+
+
+/*!*Large devices (desktops, 992px and up)*!*/
+/*@media only screen and (min-width: 992px) {*/
+
+/*}*/
+/*!*Extra large devices (large desktops, 1200px and up)*!*/
+/*@media only screen and (min-width: 1200px) {*/
+
+/*}*/
