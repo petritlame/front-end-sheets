@@ -13,6 +13,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body{
     /*background-color: gray;*/
 }
+.fixed-position {
+    overflow: hidden;
+}
 /*Navbar*/
 .navbar {
     padding: 1.6rem 8rem;
@@ -23,6 +26,9 @@ body{
     background-color: transparent !important;
     z-index: 100;
     transition: background-color 200ms linear;
+    -webkit-box-shadow: 0px -60px 40px 27px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px -60px 40px 27px rgba(0,0,0,0.67);
+    box-shadow: 0px -60px 40px 27px rgba(0,0,0,0.67);
 }
 .navbar-scrolled{
     background-color: #ffffff !important;
@@ -102,6 +108,11 @@ body{
     background-color: #00e3df;
     padding: 8px 24px;
 }
+
+.btn.btn-turqoise:hover{
+    background-color: #00b7b4;
+}
+
 .mobile-logo{ display: none}
 .logo{ display: block}
 #mobile-login{ display: none }
@@ -111,10 +122,90 @@ body{
 
 /*Sections*/
 .section-banner{
-    background-color: #3d94ff;
-    height: 1800px;
+    overflow: hidden;
+    height: 960px;
+    background-image: url('../img/background.svg');
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section {
+    margin-right: 0;
+    padding: 48px 24px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
+.container2 {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+}
+
+.container2, .nav-trans-cont {
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-cont {
+    display: flex;
+    height: 80%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.dark-gradiend-card, .hero-cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+.hero-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 110px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1.25fr 1.75fr;
+    grid-template-columns: 1.25fr 1.75fr;
+    grid-template-rows: auto;
+}
+.hero-con__left {
+    padding-right: 15px;
+}
+.h2-turqoise, .hero-main-img-w, .nav-trans-cont, .rhomboid, .testimo-card {
+    position: relative;
+}
+.hero-main-img {
+    left: 3%;
+    top: -65px;
+    right: auto;
+    width: 90vw;
+    max-width: 952px;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px 0 rgba(19,21,51,.24);
+}
+.h1-hero {
+    color: #fff;
+}
+
+.h1-hero, .h2-40 {
+    font-size: 40px;
+    line-height: 48px;
+    font-family: Circularstd,sans-serif;
+}
 /*Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 600px) and (max-width: 1000px){
     /*Navbar*/
