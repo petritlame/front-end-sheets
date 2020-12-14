@@ -10,9 +10,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-family: sans-serif;
 }
 
-body{
-    /*background-color: gray;*/
+h1 {
+    margin-bottom: 10px;
+    font-size: 38px;
+    line-height: 44px;
+    font-weight: 700;
+    margin-top: 20px;
 }
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Circularstd book',sans-serif;
+    color: #131533;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
 .fixed-position {
     overflow: hidden;
 }
@@ -140,6 +154,11 @@ body{
     width: 100%;
     height: 100%;
 }
+.container-2{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .hero-one {
     display: -webkit-box;
     display: -webkit-flex;
@@ -179,22 +198,7 @@ body{
     color: #fff;
     font-size: 18px;
 }
-h1 {
-    margin-bottom: 10px;
-    font-size: 38px;
-    line-height: 44px;
-    font-weight: 700;
-    margin-top: 20px;
-}
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: 'Circularstd book',sans-serif;
-    color: #131533;
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 400;
-}
+
 .hero-btn{
     position: static;
     display: inline-block;
@@ -222,6 +226,127 @@ h3 {
     border-radius: 16px;
     box-shadow: 0 4px 32px 0 rgba(19,21,51,.24);
 }
+.section-2-tools{
+    padding-top: 0;
+}
+
+/*section 2*/
+.container-2 {
+    max-width: 1300px;
+    padding-top: 0;
+}
+.h1-tools {
+    text-align: center;
+}
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+}
+
+.hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.hover-content {
+    position: relative;
+    z-index: 99;
+}
+/* DEMO 2 ============================== */
+.hover-tools .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+}
+
+.hover-tools-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.hover-tools-description {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    transition: all 0.3s;
+}
+
+.hover-tools:hover .hover-tools-title {
+    transform: translateY(-1.5rem);
+}
+
+.hover-tools:hover .hover-tools-description {
+    bottom: 0.5rem;
+    opacity: 1;
+}
+
+.hover-tools:hover .hover-overlay {
+    background: linear-gradient(to top, rgba(49, 79, 233, 0.9), rgba(73, 163, 233, 0.1));
+}
+
+.h1-feature{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.features-tabs {
+    background: linear-gradient(160deg, rgba(145,160,255,1) 0%, #5c72fd 65%);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.tab-content-text{
+    max-width: 450px;
+}
+
+.h1-tab{
+    color: #fff;
+}
+.p-tab{
+    color: #fff;
+    font-size: 16px;
+}
+.tab-btn{
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px 23px;
+    border: solid 2px #fff;
+    color: #fff;
+}
+.tab-btn:hover {
+    color: #7587fe;
+    background-color: #fff;
+}
+.tab-image img{
+    position: absolute;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px 0 rgba(19,21,51,.24);
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media only screen and (max-width: 600px) and (max-width: 1000px){
     /*Navbar*/
@@ -271,6 +396,40 @@ h3 {
         border-radius: 8px;
         width: auto;
         max-width: 100%;
+    }
+    .tools-col-3 {
+        padding-bottom: 15px !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    .section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .section-3-feature {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .features-tabs{
+        padding: 0;
+    }
+
+    .tab-image img{
+        position: inherit;
+        margin-top: 30px;
+    }
+    .tab-pane {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .tab-containers {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 /*!* Medium devices (tablets, 768px and up)*!*/
