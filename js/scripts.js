@@ -30,9 +30,15 @@ $(function () {
             if ($(this).scrollTop() > $nav.height()) {
                 $(".logo").attr("src", "img/logo-dark.svg");
                 $(".mobile-logo").attr("src", "img/logo-dark.svg");
+                $("#login-button").addClass('login-scrolled');
+                $(".btn-turqoise").addClass('custom-link-scrolled');
+                $(".custom-link").addClass('custom-link-scrolled');
             }else{
                 $(".logo").attr("src", "img/logo-light.svg");
                 $(".mobile-logo").attr("src", "img/logo-light.svg");
+                $("#login-button").removeClass('login-scrolled');
+                $(".btn-turqoise").removeClass('custom-link-scrolled');
+                $(".custom-link").removeClass('custom-link-scrolled');
             }
     });
 
